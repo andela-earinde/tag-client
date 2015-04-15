@@ -1,13 +1,15 @@
 angular.module("TagApp", ['taguser.module',
 	                      'ngMaterial',
+                          'ngAnimate',
+                          'ngAria',
 	                      'ngMessages',
-	                      'ngRoutes',])
+	                      'ngRoute'])
 
     .config(["$mdThemingProvider", "$routeProvider", 
     	     function($mdThemingProvider, $routeProvider) {
     	     	$mdThemingProvider.theme('default')
-    	     	    .primaryPallete('indigo')
-    	     	    .accentPallete('red');
+    	     	    .primaryPalette('indigo')
+    	     	    .accentPalette('red');
 
     	     	$routeProvider.when('/', {
     	     		templateUrl: "app/tag-client/templates/first-page.html"

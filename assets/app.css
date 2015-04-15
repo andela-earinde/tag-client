@@ -1,0 +1,56 @@
+html, body {
+  font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+  font-size:14px;
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+}
+
+md-toolbar  {
+  height: 50px;
+}
+
+.fa-bars {
+	color: #f44336;
+} 
+
+.sidenav-bar {
+	height: 300px;
+}
+
+.sidenav-bar img {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	top: 50px;
+	left: 70px;
+}
+
+.sidebar-tool {
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+.sidebar-tool h3 {
+	position: relative;
+	left: 60px;
+}
+
+.sidebar-tool p {
+	position: relative;
+	left: 20px;
+}
+
+.sidebutton {
+	padding: 20px;
+	margin-top: 30px;
+	width: 200px;
+}
+
+
