@@ -11,10 +11,10 @@ angular.module("TagApp", ['taguser.module',
     	     	    .primaryPalette('indigo')
     	     	    .accentPalette('red');
 
-    	     	$routeProvider.when('/', {
+    	     	$routeProvider.when('/users', {
     	     		templateUrl: "app/tag-client/templates/first-page.html"
     	     	}).otherwise({
-    	     		redirectTo: "/404"
+    	     		redirectTo: "/"
     	     	});
 
     	     }]);

@@ -17,7 +17,7 @@
     </head>
 
     <body layout="column" ng-controller="TagController as tag">
-        <div flex layout="row">
+        <div class="body-container">
           <md-toolbar>
               <div class="md-toolbar-tools" layout="row" layout-align="space-between center">               
                  <md-button class="md-icon-button" aria-label="More" ng-click="tag.openSideNav()">
@@ -26,10 +26,15 @@
                  </md-button> 
 
                  <img src="assets/material.png" alt="" class="icon">
-
-                 <md-button arial-label="Login" md-direction="right"> Login</md-button>                
+                 <div>
+                   <md-button arial-label="Login" ng-href="#/" ng-click="tag.showHome()"> 
+                     Home
+                   </md-button>
+                   <md-button arial-label="Login"> Login</md-button>    
+                 </div>                                
               </div>
           </md-toolbar> 
+
           <md-sidenav md-component-id="left" class="md-sidenav-left">
             <md-toolbar class="sidenav-bar">
                 <img src="assets/material.png" alt="material logo">
@@ -39,15 +44,24 @@
                 </div>
             </md-toolbar>
             <div layout="column" layout-align="space-between center">
-              <md-button class="md-raised md-primary sidebutton">Find Users</md-button>
-              <md-button class="md-raised md-primary sidebutton">Find Tags</md-button>          
+              <md-button class="md-raised md-primary sidebutton" ng-href="#/users" ng-click="tag.hideSlide()">
+                Find Users
+              </md-button>
+              <md-button class="md-raised md-primary sidebutton">Find Tags
+              </md-button>          
             </div>
           </md-sidenav> 
+    
+          <md-progress-linear md-mode="indeterminate" class="md-warn" ng-show="tag.showProgress">
+          </md-progress-linear>
+          
+          <!-- courousel -->
+          <slider ng-hide="tag.hideSlider"> </slider>
+          <!-- end courousel -->
 
           <md-content id="content" flex  ng-view>
-            
-          </md-content>  
-        </div>
+          </md-content> 
+         </div> 
   </body>
 
     <script src="bower_components/angular/angular.js"></script>
@@ -60,6 +74,7 @@
     <script src="app/app.js"></script>
     <script src="app/tag-client/taguser-module.js"></script>
     <script src="app/tag-client/controllers/tag-controller.js"></script>
+    <script src="app/tag-client/directives/taguser-directives.js"></script>
     <script src="assets/live.js"></script>
 </html>
 

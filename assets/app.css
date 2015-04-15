@@ -48,9 +48,25 @@ md-toolbar  {
 }
 
 .sidebutton {
-	padding: 20px;
+	padding: 10px;
 	margin-top: 30px;
 	width: 200px;
+	font-size: 20px;
+	font-weight: bold;
 }
+
+.slider-position {
+	position: relative;
+	top: 20px;
+	left: 250px;
+	width: 800px;
+}
+
+.cs_wrapper{
+	color: white;
+	font-weight: bold;
+}
+
+
 
 
