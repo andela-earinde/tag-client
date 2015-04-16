@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app= "TagApp">
     <head>
-        <title>Tagger</title>
+        <title>MonTag</title>
         <base href="/">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,6 +62,11 @@
     
           <md-progress-linear md-mode="indeterminate" class="md-warn" ng-show="tag.showProgress">
           </md-progress-linear>
+          
+          <div class="header" ng-hide="tag.hideSlider">
+            <h1>Montag</h1>
+            <h3>Find and Share Tags</h1>
+          </div>
           
           <!-- courousel -->
           <slider ng-hide="tag.hideSlider"> </slider>

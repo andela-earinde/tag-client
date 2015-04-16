@@ -19,12 +19,16 @@ angular.module('taguser.module')
         	self.hideSlider = false;
         }
 
-        self.showDialog = function(ev) {
-            $mdDialog.show({
-                controller: DialogController,
-                template: "<p>I don't do shit</p>",
-                targetEvent: ev
-            })
-        }
+        //Handle login here, move this to another contoller when this starts 
+        // becoming messy
+        self.email = "";
+        self.pasword = "";
 
+        //Handle signup here, move this to another conroller when this starts
+        //becoming messy
+        self.emailSign = "";
+        self.passSign = "";
+        self.usersign = ""
+        self.noSpace = /^[a-zA-Z_]+$/;
+ 
     }]);

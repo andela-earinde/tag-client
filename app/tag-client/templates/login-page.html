@@ -3,20 +3,29 @@
     <md-toolbar>
        <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
         <h2>Login</h2>
-        <p>Don't have an account? 
-           <md-button ng-href="#/signup" class="md-raised md-primary">Signup</md-button>
-        </p>
+        <p>Don't have an account?</p>
+           <md-button ng-href="#/signup" class="md-raised md-primary signup">
+             Signup
+           </md-button>
        </div>
     </md-toolbar>
     <md-card-content class="login-block">
       <form name="loginForm">
 			  <md-input-container >
 			    <label>Email</label>
-		      <input type="text" required>
+		      <input type="email" name="emailName" required ng-model="tag.email">
+		      <div ng-messages="loginForm.emailName.$error">
+		        <div ng-message="required">This field is required</div>
+		        <div ng-message="email">Type in a valid email address</div>
+		      </div>
 			  </md-input-container>
+			  
 			  <md-input-container >
 			    <label>Password</label>
-		      <input type="password" required>
+		      <input type="password" name="pwd" required ng-model="tag.password">
+		       <div ng-messages="loginForm.pwd.$error">
+		        <div ng-message="required">This field is required</div>
+		      </div>
 			  </md-input-container>
 			  <md-button class="md-fab login-but" ng-disabled="loginForm.$invalid">
 			    Login

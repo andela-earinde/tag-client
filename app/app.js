@@ -20,6 +20,9 @@ angular.module("TagApp", ['taguser.module',
                 .when('/login', {
                     templateUrl: "app/tag-client/templates/login-page.html"
                 })
+                .when('/signup', {
+                    templateUrl: "app/tag-client/templates/signup-page.html"
+                })
                 .otherwise({
     	     		redirectTo: "/"
     	     	});
