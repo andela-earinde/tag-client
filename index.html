@@ -27,10 +27,15 @@
 
                  <img src="assets/material.png" alt="" class="icon">
                  <div>
-                   <md-button arial-label="Login" ng-href="#/" ng-click="tag.showHome()"> 
+                   <md-button arial-label="Login" ng-href="#/" ng-click="tag.showHome()" class="left-header">
+                     <span class="fa fa-home"></span>
                      Home
                    </md-button>
-                   <md-button arial-label="Login"> Login</md-button>    
+
+                   <md-button arial-label="Login" class="left-header" ng-href="#/login" ng-click="tag.hideSlide()"> 
+                      <span class="fa fa-sign-in"></span>
+                     Login
+                   </md-button>    
                  </div>                                
               </div>
           </md-toolbar> 
@@ -45,9 +50,12 @@
             </md-toolbar>
             <div layout="column" layout-align="space-between center">
               <md-button class="md-raised md-primary sidebutton" ng-href="#/users" ng-click="tag.hideSlide()">
+                <span class="fa fa-users"></span>
                 Find Users
               </md-button>
-              <md-button class="md-raised md-primary sidebutton">Find Tags
+              <md-button class="md-raised md-primary sidebutton" ng-href="#/tags" ng-click="tag.hideSlide()">
+              <span class="fa fa-tags"></span>
+              Find Tags
               </md-button>          
             </div>
           </md-sidenav> 

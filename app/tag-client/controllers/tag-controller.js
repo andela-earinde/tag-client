@@ -1,5 +1,7 @@
 angular.module('taguser.module')
-    .controller("TagController",["$mdSidenav","$location", function($mdSidenav, $location) {
+    .controller("TagController",["$mdSidenav","$location", "$mdDialog", 
+                 function($mdSidenav, $location, $mdDialog) {
+
         self = this;
 
     	self.showProgress = false;
@@ -16,4 +18,13 @@ angular.module('taguser.module')
         self.showHome = function() {
         	self.hideSlider = false;
         }
+
+        self.showDialog = function(ev) {
+            $mdDialog.show({
+                controller: DialogController,
+                template: "<p>I don't do shit</p>",
+                targetEvent: ev
+            })
+        }
+
     }]);

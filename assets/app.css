@@ -6,6 +6,25 @@ html, body {
   padding: 0px;
 }
 
+.search-box {
+	width: 700px;
+}
+
+.display-box {
+	width: 700px;
+	height: 500px;
+}
+
+.login-block {
+	width: 400px;
+	height: 300px;
+}
+
+.login-but {
+	positin: relative;
+	left: 300px;
+}
+
 .icon {
 	height: 50px;
 	width: 50px;
@@ -16,7 +35,7 @@ md-toolbar  {
 }
 
 .fa-bars {
-	color: #f44336;
+	color: #EC407A;
 } 
 
 .sidenav-bar {
@@ -66,6 +85,14 @@ md-toolbar  {
 	color: white;
 	font-weight: bold;
 }
+
+div .left-header {
+    margin: 20px;
+}
+
+
+
+
 
 
 

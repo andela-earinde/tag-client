@@ -9,11 +9,18 @@ angular.module("TagApp", ['taguser.module',
     	     function($mdThemingProvider, $routeProvider) {
     	     	$mdThemingProvider.theme('default')
     	     	    .primaryPalette('indigo')
-    	     	    .accentPalette('red');
+    	     	    .accentPalette('pink');
 
     	     	$routeProvider.when('/users', {
     	     		templateUrl: "app/tag-client/templates/first-page.html"
-    	     	}).otherwise({
+    	     	})
+                .when('/tags', {
+                    templateUrl: "app/tag-client/templates/second-page.html"
+                })
+                .when('/login', {
+                    templateUrl: "app/tag-client/templates/login-page.html"
+                })
+                .otherwise({
     	     		redirectTo: "/"
     	     	});
 
