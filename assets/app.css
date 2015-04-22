@@ -12,7 +12,7 @@ html, body {
 
 .display-box {
 	width: 700px;
-	height: 500px;
+	height: 400px;
 }
 
 .login-block {
@@ -42,7 +42,7 @@ md-toolbar  {
 }
 
 .fa-bars, .signup{
-	color: #EC407A !important;
+	color: white !important;
 } 
 
 .sidenav-bar {
@@ -114,6 +114,46 @@ div .left-header {
 	left: -70px;
 }
 
+md-grid-list {
+   background: whitesmoke;
+   margin-top: 10px;	
+}
+
+.profile {
+	background-color: #9575CD;
+}
+
+.edit-profile {
+	background-color: #81C784;
+}
+
+.tag {
+	background-color: #4DD0E1;
+}
+
+.sign {
+	background-color: #BA68C8;
+}
+
+.delete {
+	background-color: #E57373;
+}
+
+.edit-tags {
+	background-color: #4DB6AC;
+}
+
+.edit-image {
+	width: 150px;
+	height: 150px;
+}
+
+.login-msg {
+	width: 400px;
+	background-color: #E57373;
+	font-size: 20px;
+	text-align: center;
+}
 
 
 

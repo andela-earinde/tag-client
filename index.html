@@ -27,7 +27,7 @@
 
                  <img src="assets/material.png" alt="" class="icon">
                  <div>
-                   <md-button arial-label="Login" ng-href="#/" ng-click="tag.showHome()" class="left-header">
+                   <md-button arial-label="Login" ng-href="#/" ng-click="tag.reloadHome()" class="left-header">
                      <span class="fa fa-home"></span>
                      Home
                    </md-button>
@@ -83,10 +83,13 @@
     <script src="bower_components/angular-material/angular-material.js"></script>
     <script src="bower_components/angular-messages/angular-messages.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
    
     <script src="app/app.js"></script>
     <script src="app/tag-client/taguser-module.js"></script>
     <script src="app/tag-client/controllers/tag-controller.js"></script>
+    <script src="app/tag-client/controllers/signup-login-controller.js"></script>
+    <script src="app/tag-client/service/service.js"></script>
     <script src="app/tag-client/directives/taguser-directives.js"></script>
     <script src="assets/live.js"></script>
 </html>

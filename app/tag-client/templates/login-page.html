@@ -1,4 +1,10 @@
-<div layout="column" layout-align="center center"> 
+<div layout="column" layout-align="center center">
+   <md-progress-linear md-mode="indeterminate" ng-hide="slogin.hideProg"></md-progress-linear>
+  <md-card class="md-whiteframe-z2" ng-hide="slogin.hidemsg">
+    <md-card-content class="login-msg">
+       <p>{{slogin.msg}}</p>
+    </md-card-content>
+  </md-card>
   <md-card class="md-whiteframe-z2">
     <md-toolbar>
        <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
@@ -13,7 +19,7 @@
       <form name="loginForm">
 			  <md-input-container >
 			    <label>Email</label>
-		      <input type="email" name="emailName" required ng-model="tag.email">
+		      <input type="email" name="emailName" required ng-model="slogin.email">
 		      <div ng-messages="loginForm.emailName.$error">
 		        <div ng-message="required">This field is required</div>
 		        <div ng-message="email">Type in a valid email address</div>
@@ -22,12 +28,12 @@
 			  
 			  <md-input-container >
 			    <label>Password</label>
-		      <input type="password" name="pwd" required ng-model="tag.password">
+		      <input type="password" name="pwd" required ng-model="slogin.password">
 		       <div ng-messages="loginForm.pwd.$error">
 		        <div ng-message="required">This field is required</div>
 		      </div>
 			  </md-input-container>
-			  <md-button class="md-fab login-but" ng-disabled="loginForm.$invalid">
+			  <md-button class="md-fab login-but" ng-disabled="loginForm.$invalid" ng-click="slogin.loginUser()">
 			    Login
 			  </md-button>
 	  </form>
