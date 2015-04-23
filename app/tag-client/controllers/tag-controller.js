@@ -33,7 +33,7 @@ angular.module('taguser.module')
               $scope.hideLogin.val = false; 
             }
 
-            if($location.path() === "tag-client/") {
+            if($location.path() === "#/") {
                 self.hideSlider = false;
             }
             else {

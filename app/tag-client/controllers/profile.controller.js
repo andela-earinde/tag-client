@@ -220,7 +220,7 @@ angular.module("taguser.module")
     	self.signOut = function() {
     		console.log("called");
     		$localStorage.tagToken = {};
-    		$location.url("tag-client/#/login");
+    		$location.url("#/login");
     	}
     }]);
 
