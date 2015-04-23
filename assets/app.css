@@ -6,6 +6,12 @@ html, body {
   padding: 0px;
 }
 
+.background {
+	background-color: #5C6BC0;
+    width: 1500px;
+    height: 900px;
+}
+
 .search-box {
 	width: 700px;
 }
@@ -28,6 +34,7 @@ html, body {
 .login-but {
 	positin: relative;
 	left: 300px;
+	margin: 20px;
 }
 
 .icon {
@@ -105,8 +112,6 @@ div .left-header {
 	left: 35%;
 	color: whitesmoke;
 	font-size: 50px;
-	font-family: "Open Sans";
-	font-style: italic;
 }
 
 .header h3 {
@@ -129,6 +134,7 @@ md-grid-list {
 
 .tag {
 	background-color: #4DD0E1;
+	overflow: auto;
 }
 
 .sign {
@@ -155,6 +161,51 @@ md-grid-list {
 	text-align: center;
 }
 
+.prof-image {
+    position: relative;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+}
+
+.prof-info {
+	position: relative;
+	left: -70px;
+	color: white;
+	font-size: 20px;
+}
+
+.tags-option {
+  float: left;
+  width: 200px;
+  margin: 5px;
+  box-sizing: border-box;
+  padding: 0 8px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.circle-prog {
+	position: absolute;
+	top: 400px;
+	left: 600px;
+	z-index: 10;
+}
+
+.md-item-text {
+	width: 100%;
+	padding: 20px;
+}
+
+.md-item-text h3 {
+	display: inline;
+}
+
+.edit-but {
+	position: relative;
+	right: 120px;
+}
 
 
 

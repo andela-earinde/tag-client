@@ -1,5 +1,6 @@
 angular.module("taguser.module")
-    .controller("SignupLogin", ["FindUserTag","$timeout", function(FindUserTag, $timeout) {
+    .controller("SignupLogin", ["FindUserTag","$timeout","$location", 
+    	           function(FindUserTag, $timeout, $location) {
 
         self = this;
         self.msg = "";
@@ -23,7 +24,8 @@ angular.module("taguser.module")
 	               	  self.hideProg = true;
 	            	  console.log(reqData.token);
 	            	  FindUserTag.storeToken(reqData.token);
-	            	  FindUserTag.getUserInfo(req.token);
+	            	  FindUserTag.getUserInfo(reqData.token);
+	            	  $location.url("/profile");
 	               }
 	               else {
 	               	   self.hideProg = true;
@@ -62,6 +64,8 @@ angular.module("taguser.module")
         				self.hideProg = true;
         				console.log(signData);
         				FindUserTag.storeToken(signData.token);
+                        FindUserTag.getUserInfo(signData.token);
+                        $location.url("/profile");
         			}
         			else {
         				self.hideProg = true;
