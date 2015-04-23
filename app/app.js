@@ -12,33 +12,33 @@ angular.module("TagApp", ['taguser.module',
     	     	    .primaryPalette('indigo')
     	     	    .accentPalette('pink');
 
-    	     	$routeProvider.when('/users', {
+    	     	$routeProvider.when('tag-client/#/users', {
     	     		templateUrl: "tag-client/app/tag-client/templates/first-page.html",
                     controller: "TagController",
                     controllerAs: "tag"
     	     	})
-                .when('/tags', {
+                .when('tag-client/#/tags', {
                     templateUrl: "tag-client/app/tag-client/templates/second-page.html",
                     controller: "TagController",
                     controllerAs: "tag"
                 })
-                .when('/login', {
+                .when('tag-client/#/login', {
                     templateUrl: "tag-client/app/tag-client/templates/login-page.html",
                     controller: "SignupLogin",
                     controllerAs: "slogin"
                 })
-                .when('/signup', {
+                .when('tag-client/#/signup', {
                     templateUrl: "tag-client/app/tag-client/templates/signup-page.html",
                     controller: "SignupLogin",
                     controllerAs: "slogin"
                 })
-                .when("/profile", {
+                .when("tag-client/#/profile", {
                     templateUrl: "tag-client/app/tag-client/templates/profile-page.html",
                     controller: "ProfileCtrl",
                     controllerAs: "prof"
                 })
                 .otherwise({
-    	     		redirectTo: "/"
+    	     		redirectTo: "tag-client/"
     	     	});
 
     	     }]);

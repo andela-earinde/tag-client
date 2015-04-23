@@ -25,7 +25,7 @@ angular.module("taguser.module")
 	            	  console.log(reqData.token);
 	            	  FindUserTag.storeToken(reqData.token);
 	            	  FindUserTag.getUserInfo(reqData.token);
-	            	  $location.url("/profile");
+	            	  $location.url("tag-client/#/profile");
 	               }
 	               else {
 	               	   self.hideProg = true;
@@ -65,7 +65,7 @@ angular.module("taguser.module")
         				console.log(signData);
         				FindUserTag.storeToken(signData.token);
                         FindUserTag.getUserInfo(signData.token);
-                        $location.url("/profile");
+                        $location.url("tag-client/#/profile");
         			}
         			else {
         				self.hideProg = true;
